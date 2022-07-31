@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+body {
+    background-color: gainsboro;
+}
+
+h1
+,h2
+,p {
+    text-align: center;
+}
+
+h2 {
+    color: purple;
+}
+
+header
+,section
+,table {
+    margin: 20px auto;
+}
+
+table {
+    border: 2px solid purple;
+    width: 700px;
+}
+
+thead tr th{
+    background-color: pink;
+    padding: 2px;
+}
+
+.code {
+    background-color: antiquewhite;
+    font-family: "Space Mono";
+}
+
+tbody tr td
+,tbody tr th{
+    border-top: 1px solid purple;
+}
