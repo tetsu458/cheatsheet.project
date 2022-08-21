@@ -86,6 +86,77 @@
                     </tbody>
                 </table>
             </section>
+            <section class="form table">
+                <h2>Form</h2>
+                <table class="wide">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>example</th>
+                            <th>description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="code">&lt;form&gt;</span></td>
+                            <td>&lt;form action='submission.html' method='POST'&gt;&lt;/form&gt;</td>
+                            <td>initiate HTML form. <span class='code2'>action</span> attribute determines where the form’s information goes, <span class='code2'>method</span> attribute determines how the information is sent and processed.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="code">&lt;label&gt;</span></td>
+                            <td>&lt;label for='ID'&gt;Label of input&lt;/form&gt;</td>
+                            <td>Display the input label. <span class='code2'>for</span> links correspond label and input, this normally comes from the input ID attribute</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="8"><span class="code">&lt;input&gt;</span></td>
+                            <td>&lt;input type='text' id='username' name='username'&gt;</td>
+                            <td>Create text input<span class='code2'>type='text'</span> allows user to type text(single line)</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type='number' id='amount' name='amount'&gt;</td>
+                            <td>Create number(only) input<span class='code2'>type='number'</span> allows user to type number</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type='password' id='passwprd' name='password'&gt;</td>
+                            <td>Create password input<span class='code2'>type='password'</span> hides the input in user interface<td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type='range' id='rating' name='rating' value='3' min='1' max='5' step='0.5'&gt;</td>
+                            <td>Create range input<span class='code2'>value='3'</span> determines the initial position of the pointer, this normally put in the middle. <span class='code2'>min & max</span> attributes decides how big the range is. <span class='code2'>step</span> determines the fluidity of the range, the smaller this value is the more fluidity the pointer moves</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type='checkbox' id='lettuce' name='topping' value='lettuce'&gt;</td>
+                            <td>Create checkbox(user can select multiple items) input<span class='code2'>value=''</span> should match with the content inside the label tag</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type='radio' id='yes' name='cheese' value='yes'&gt;</td>
+                            <td>Create password input <span class='code2'>type='password'</span> hides the input in user interface<td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input list='sauces' id='sauce' name='sauce'&gt;<br>
+                                &lt;datalist id='sauces'&gt;&lt;option value='ketchap&gt;&lt;/option&gt;&lt;/datalist&gt;</td>
+                            <td>Add list of dataset into input by <span class='code2'>list='ID'</span>. This ID needs to match with the one in <span class='code2'>datalist</span>. You can have multiple <span class='code2'>option</span> tag, this needs to contain <span class='code2'>value=''</span> attribute represent the option. Nothing should be in the opening/closing tag. User's still able to type different value than option.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type='submit' value='Send'&gt;</td>
+                            <td>Create submit button <span class='code2'>value=''</span> determines the contents of the submit button<td>
+                        </tr>
+                        <tr>
+                            <td><span class="code">&lt;select&gt;</span></td>
+                            <td>&lt;select name='bun' id='bun'&gt;<br>
+                                &lt;option value='sesame'&gt;Sesame&lt;/opetion&gt;&lt;/select&gt;</td>
+                            <td>Create selection where user cannot type other value <span class='code2'>opetion<span> determines the value of selection, option can be created multiple times, inside the opening/closing tag, there needs to be display value.<td>
+                        </tr>
+                        <tr>
+                            <td><span class="code">&lt;textarea&gt;</span></td>
+                            <td>&lt;textarea id='extra' name='extra' rows='3' cols='40'&gt;</td>
+                            <td>Create multi line text box you can specify the size of the field with <span class='code2'>rows/cols<span> attributes<td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Normally each form contents are grouped with <span class="code">&lt;section&gt;</span>, this section tag has <span class='code2'>class</span> describe the kind of input. This normally matches with <span class='code2'>name</span> attribute in the input tag</p>
+                <p>When a <span class="code">&lt;form&gt;</span> is submitted, the data will be submitted as <span class='code2'>name=value</span> pair</p>
+            </section>
         </div>
         <div class="css">
             <h1>CSS styling</h1>
