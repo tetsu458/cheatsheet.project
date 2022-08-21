@@ -39,3 +39,22 @@ tbody tr td
 ,tbody tr th{
     border-top: 1px solid purple;
 }
+
+.table {
+    width: 700px;
+}
+
+.wide {
+    width: 1000px;
+}
+
+.form {
+    width: 1000px;
+}
+
+.code2 {
+    background-color: rgb(190, 186, 186);
+    border-radius: 5px;
+    font-family: "Space Mono";
+    font-size: smaller;
+}
