@@ -35,6 +35,11 @@ thead tr th{
     font-family: "Space Mono";
 }
 
+.tag {
+    font-family: "Space Mono";
+    letter-spacing: -1px;
+}
+
 tbody tr td
 ,tbody tr th{
     border-top: 1px solid purple;

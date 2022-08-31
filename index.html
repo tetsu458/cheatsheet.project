@@ -13,7 +13,7 @@
     </header>
     <main>
         <div class="html">
-            <section class="tag table">
+            <section class="table-tag table">
                 <h2>Table Tags</h2>
                 <table>
                     <thead>
@@ -62,7 +62,7 @@
                     </tbody>
                 </table>
             </section>
-            <section class="attr table">
+            <section class="table-attr table">
                 <h2>Table Attributes</h2>
                 <table>
                     <thead>
@@ -99,57 +99,57 @@
                     <tbody>
                         <tr>
                             <td><span class="code">&lt;form&gt;</span></td>
-                            <td>&lt;form action='submission.html' method='POST'&gt;&lt;/form&gt;</td>
+                            <td><span class="tag">&lt;form action='submission.html' method='POST'&gt;&lt;/form&gt;</span></td>
                             <td>initiate HTML form. <span class='code2'>action</span> attribute determines where the form’s information goes, <span class='code2'>method</span> attribute determines how the information is sent and processed.</td>
                         </tr>
                         <tr>
                             <td><span class="code">&lt;label&gt;</span></td>
-                            <td>&lt;label for='ID'&gt;Label of input&lt;/form&gt;</td>
+                            <td><span class="tag">&lt;label for='ID'&gt;Label of input&lt;/form&gt;</span></td>
                             <td>Display the input label. <span class='code2'>for</span> links correspond label and input, this normally comes from the input ID attribute</td>
                         </tr>
                         <tr>
                             <td rowspan="8"><span class="code">&lt;input&gt;</span></td>
-                            <td>&lt;input type='text' id='username' name='username'&gt;</td>
+                            <td><span class="tag">&lt;input type='text' id='username' name='username'&gt;</span></td>
                             <td>Create text input<span class='code2'>type='text'</span> allows user to type text(single line)</td>
                         </tr>
                         <tr>
-                            <td>&lt;input type='number' id='amount' name='amount'&gt;</td>
+                            <td><span class="tag">&lt;input type='number' id='amount' name='amount'&gt;</span></td>
                             <td>Create number(only) input<span class='code2'>type='number'</span> allows user to type number</td>
                         </tr>
                         <tr>
-                            <td>&lt;input type='password' id='passwprd' name='password'&gt;</td>
+                            <td><span class="tag">&lt;input type='password' id='passwprd' name='password'&gt;</span></td>
                             <td>Create password input<span class='code2'>type='password'</span> hides the input in user interface<td>
                         </tr>
                         <tr>
-                            <td>&lt;input type='range' id='rating' name='rating' value='3' min='1' max='5' step='0.5'&gt;</td>
+                            <td><span class="tag">&lt;input type='range' id='rating' name='rating' value='3' min='1' max='5' step='0.5'&gt;</span></td>
                             <td>Create range input<span class='code2'>value='3'</span> determines the initial position of the pointer, this normally put in the middle. <span class='code2'>min & max</span> attributes decides how big the range is. <span class='code2'>step</span> determines the fluidity of the range, the smaller this value is the more fluidity the pointer moves</td>
                         </tr>
                         <tr>
-                            <td>&lt;input type='checkbox' id='lettuce' name='topping' value='lettuce'&gt;</td>
+                            <td><span class="tag">&lt;input type='checkbox' id='lettuce' name='topping' value='lettuce'&gt;</span></td>
                             <td>Create checkbox(user can select multiple items) input<span class='code2'>value=''</span> should match with the content inside the label tag</td>
                         </tr>
                         <tr>
-                            <td>&lt;input type='radio' id='yes' name='cheese' value='yes'&gt;</td>
+                            <td><span class="tag">&lt;input type='radio' id='yes' name='cheese' value='yes'&gt;</span></td>
                             <td>Create password input <span class='code2'>type='password'</span> hides the input in user interface<td>
                         </tr>
                         <tr>
-                            <td>&lt;input list='sauces' id='sauce' name='sauce'&gt;<br>
-                                &lt;datalist id='sauces'&gt;&lt;option value='ketchap&gt;&lt;/option&gt;&lt;/datalist&gt;</td>
+                            <td><span class="tag">&lt;input list='sauces' id='sauce' name='sauce'&gt;<br>
+                                &lt;datalist id='sauces'&gt;<br>&lt;option value='ketchap&gt;&lt; /option&gt;<br>&lt; /datalist&gt;</span></td>
                             <td>Add list of dataset into input by <span class='code2'>list='ID'</span>. This ID needs to match with the one in <span class='code2'>datalist</span>. You can have multiple <span class='code2'>option</span> tag, this needs to contain <span class='code2'>value=''</span> attribute represent the option. Nothing should be in the opening/closing tag. User's still able to type different value than option.</td>
                         </tr>
                         <tr>
-                            <td>&lt;input type='submit' value='Send'&gt;</td>
+                            <td><span class="tag">&lt;input type='submit' value='Send'&gt;</span></td>
                             <td>Create submit button <span class='code2'>value=''</span> determines the contents of the submit button<td>
                         </tr>
                         <tr>
                             <td><span class="code">&lt;select&gt;</span></td>
-                            <td>&lt;select name='bun' id='bun'&gt;<br>
-                                &lt;option value='sesame'&gt;Sesame&lt;/opetion&gt;&lt;/select&gt;</td>
+                            <td><span class="tag">&lt;select name='bun' id='bun'&gt;<br>
+                                &lt;option value='sesame'&gt;Sesame&lt; /opetion&gt; <br>&lt; /select&gt;</span></td>
                             <td>Create selection where user cannot type other value <span class='code2'>opetion<span> determines the value of selection, option can be created multiple times, inside the opening/closing tag, there needs to be display value.<td>
                         </tr>
                         <tr>
                             <td><span class="code">&lt;textarea&gt;</span></td>
-                            <td>&lt;textarea id='extra' name='extra' rows='3' cols='40'&gt;</td>
+                            <td><span class="tag">&lt;textarea id='extra' name='extra' rows='3' cols='40'&gt;</span></td>
                             <td>Create multi line text box you can specify the size of the field with <span class='code2'>rows/cols<span> attributes<td>
                         </tr>
                     </tbody>
@@ -204,6 +204,62 @@
                     </tbody>
                 </table>
             </section>
+            <section class="flex table">
+                <h2>Display: flex/inline-flex</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>code</th>
+                            <th>values</th>
+                            <th>description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="code">justify-content</span></td>
+                            <td>flex-start, flex-end, center, space-between, space-around</td>
+                            <td>defines how the browser distributes space between and around content items along the main-axis of their container.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="code">flex-direction</span></td>
+                            <td>row, row-reverse, column, column-reverse</td>
+                            <td>specifies how flex items are placed in the flex container - either vertically or horizontally.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="code">flex-wrap</span></td>
+                            <td>nowrap, wrap, wrap-reverse</td>
+                            <td>specifies whether flex items should wrap or not.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="code">flex-flow</span></td>
+                            <td>value {flex-direction flex-wrap}</td>
+                            <td>shorthand for flex-direction and flex-wrap</td>
+                        </tr>
+                        <tr>
+                            <td><span class="code">align-content</span></td>
+                            <td>start, end, flex-start, flex-end, center, space-between, space-around, space-evenly, stretch</td>
+                            <td>modifies the behavior of the flex-wrap property. It determines how to space rows from top to bottom (ie. along the cross axis). Multiple rows of items are needed for this property to take effect.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">flex-grow/shrink</td>
+                            <td>number, <span class="code">grow</span>'s default is "0", <span class="code">shrink</span>'s default is "1"</td>
+                            <td>specifies how a flex item will grow or shrink so as to fit within the space available in its flex container.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="code">flex-basis</span></td>
+                            <td>size(px?), auto</td>
+                            <td>sets the initial base size for a flex item before any other space is distributed according to other flex properties.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="code">flex</span></td>
+                            <td>value {flex-glow flex-shrink flex-basis}</td>
+                            <td>shorthand for flex-glow/shrink and basis</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+
             <section class="linking">
                 <h2>Link sheet url</h2>
                 <p class="code">&lt;link rel="stylesheet" href="URL, link-path"&gt;</p>
