@@ -45,17 +45,27 @@ tbody tr td
     border-top: 1px solid purple;
 }
 
-.table {
+#table-flex {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#table-flex section {
     width: 700px;
 }
 
-.wide {
+.table-container {
     width: 1000px;
 }
 
-.form {
+.wide-table {
     width: 1000px;
 }
+
+/* .form {
+    width: 1000px;
+} */
 
 .code2 {
     background-color: rgb(190, 186, 186);
